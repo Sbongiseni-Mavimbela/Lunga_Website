@@ -1,0 +1,395 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Home Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+  <!-- Top notification bar -->
+  <div class="top-bar">
+    Keep Your Shoes Spotless with Free Pickup – Book Now
+  </div>
+
+  <!-- Navigation bar -->
+  <nav class="navbar">
+    <!-- Search icon -->
+    <div class="search-icon">
+      <i class="fa fa-search"></i>
+    </div>
+
+    <!-- Logo -->
+    <div class="logo">
+      <a href="index.html">
+        <img src="Images/Logo-removebg-preview.png" alt="Logo">
+      </a>
+    </div>
+
+    <!-- Navigation links -->
+    <div class="nav-links">
+      <a href="membership.html">Membership</a>
+      <a href="services.html">Rates & Services</a>
+      <a href="products.html">Products & Accessories</a>
+      <a href="about us.html">About Us</a>
+    </div>
+  </nav>
+
+  <div class="banner">
+    <div class="slider">
+      <img src="https://content.codecademy.com/projects/innovation-cloud/bg.jpg" alt="" id="sliderImg">
+    </div>
+    <div class="overlay">
+      <div class="contentt">
+        <h1>Effortless Sneaker <br>Cleaning Solutions</h1>
+      </div>
+
+      <div class="containerr">
+        <div id="app" class="pulse">
+          <div class="zooltip">Play Video</div>
+          <div class="play active" id="playButton">
+            <div class="line line_1"></div>
+            <div class="line line_2"></div>
+            <div class="line line_3"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="videoModal" class="modal-vid">
+    <h2 class="video-title">See Our Sneaker Cleaning in Action</h2>
+    <div class="modal-contentt">
+      <span class="close-modal">&times;</span>
+      <video id="videoPlayer" controls>
+        <source src="vid/Snapinsta.app_video_67430978946B0D6775BD333D279A90A5_video_dashinit.mp4" type="video/mp4">
+        <source src="Snapinsta.app_video_67430978946B0D6775BD333D279A90A5_video_dashinit.mp4" type="video/webm">
+        <source src="Snapinsta.app_video_67430978946B0D6775BD333D279A90A5_video_dashinit.mp4" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+  <input type="checkbox" name="" id="chkBox">
+  <div class="mainContnt">
+    <div class="box">
+      <div class="boxes bx1">
+        <img src="/Images/Image 1.png" alt="Booking Image">
+      </div>
+      <div class="boxes bx2">
+        <h3>Booking Slip</h3>
+        <div class="login-form">
+          <form action="process-booking.php" method="POST">
+  
+            <input type="text" placeholder="First Name" id="first-name" required>
+            <input type="text" placeholder="Last Name" id="last-name" required>
+            <input type="text" placeholder="Street Address" id="street-address" required>
+            <input type="tel" placeholder="Phone Number" id="phone" required>
+            <input type="email" placeholder="Email Address" id="email" required>
+            <input type="number" placeholder="Quantity" id="quantity" min="1" required>
+  
+            <label for="collection-date"></label>
+            <input type="date" id="collection-date" required>
+  
+            <label for="collection-time"></label>
+            <input type="time" placeholder="Collection-Time" id="collection-time" required>
+  
+            <div class="services">
+              <label><input type="checkbox" id="deepwash"> Deep Wash</label><br>
+              <label><input type="checkbox" id="shoe-cleaning"> Shoe Shining</label><br>
+              <label><input type="checkbox" id="sandals-cleaning"> Sandals Cleaning</label><br>
+              <label><input type="checkbox" id="suede-recoloring"> Suede Refurbishment</label><br>
+              <label><input type="checkbox" id="Midsole Unyellowing"> Whitening</label><br>
+            </div>
+  
+            <input type="submit" value="Submit">
+  
+          </form>
+        </div>
+        <div class="close-box">
+          <label for="chkBox" class="box-close">X</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <div>
+    <a href="javascript:void(0)" id="whatsappIcon"> </a>
+  </div>
+
+
+  <div class="modal" id="modal">
+    <div class="modal-contentt">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h3>Booking Form</h3>
+      <form id="bookingForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="text" id="phone" placeholder="Your Phone Number" required>
+        <button type="submit">Submit Booking</button>
+      </form>
+    </div>
+  </div>
+  <section class="container">
+    <div class="content">
+      <p class="subtitle">OUR SERVICE</p>
+      <h2 class="title">Why choose us</h2>
+      <p class="description">At Clean Kicks, we make sneaker cleaning effortless with our seamless collection and
+        delivery service.</p>
+      <button class="btn">CONTACT US</button>
+    </div>
+
+    <div class="service-grid">
+      <!-- First Service Box -->
+      <div class="service-box dark-box">
+        <i class="large-emoji">✍️</i>
+        <h3>Fill Booking Slip</h3>
+
+        <!-- First paragraph (always visible) -->
+        <p>Start by completing our online booking slip with your details, including your name, address, contact
+          information, and the number of pairs you need cleaned.</p>
+
+        <!-- Second paragraph (hidden initially) -->
+        <p class="hidden">Select your preferred collection date and time.</p>
+
+        <!-- LEARN MORE button -->
+        <a href="#" class="toggle-paragraph">LEARN MORE →</a>
+      </div>
+
+      <!-- Second Service Box -->
+      <div class="service-box">
+        <i class="large-emoji">⭐</i>
+        <h3>Whitening</h3>
+        <p>
+          Whitening restores the brightness of white shoes, while Midsole Unyellowing removes discoloration.
+        </p>
+      </div>
+
+      <!-- Third Service Box -->
+      <div class="service-box">
+        <i class="large-emoji">👟</i>
+        <h3>Professional Cleaning</h3>
+        <p>
+          Our expert team will carefully clean and restore your sneakers, ensuring they come back looking fresh and
+          revived.
+        </p>
+      </div>
+
+      <!-- Fourth Service Box with Hidden Paragraph -->
+      <div class="service-box">
+        <i class="large-emoji">🧼</i>
+        <h3>Sandal Cleaning</h3>
+        <p>We also offer Shoe Shining for a polished finish and Sandal Cleaning to remove dirt and odors.
+          Whether it’s a deep clean, color restoration, or a quick polish. </p>
+
+        <!-- Hidden paragraph that will show up when the user clicks LEARN MORE -->
+        <p class="hidden">We’ve got you covered, Book your service today!</p>
+
+        <!-- LEARN MORE button -->
+        <a href="#" class="toggle-paragraph">LEARN MORE →</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="step-by-stepp">
+      <div class="elementor-widget">
+        <p>STEP BY STEP</p>
+      </div>
+
+      <div class="widget-container">
+        <h2 class="heading-title ">How does it work</h2>
+      </div>
+
+      <div class="steps-container">
+        <div class="step-box">
+          <div class="icon">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <h3>BOOK PICKUP.</h3>
+          <P>Got dirty sneakers? Book your pick-up online for all your dirty sneakers, shoes, or boots.</p>
+        </div>
+        <div class="step-box">
+          <div class="icon">
+            <i class="fas fa-truck"></i> <!-- Truck Icon -->
+          </div>
+          <h3>COLLECTION.</h3>
+          <p>You pack them in a box, our friendly driver collects your dirty sneakers & shoes. At your home or
+            workplace.
+          </p>
+        </div>
+        <div class="step-box">
+          <div class="icon">
+            <i class="fas fa-shoe-prints"></i> <!-- Shoe Prints Icon -->
+          </div>
+          <h3>YOU’RE DRIPPING CLEAN!!!</h3>
+          <p>4. Delivery Within 72 Hours
+            Your freshly cleaned sneakers will be delivered back to you within 72 hours.
+
+            We will notify you once your shoes are on the way, so you know when to expect them.
+            Experience convenience like never before—clean sneakers, hassle-free!</p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <label for="chkBox" class="book-button">BOOK YOUR PICKUP</label>
+      </div>
+    </div>
+  </section>
+
+  <section>
+
+
+    <div class="header">
+      <h1>Top Selling Products</h1>
+    </div>
+    <div class="gallery">
+      <div class="card">
+        <img src="/Images/6b3t65sr.png" alt="Shoe shining">
+        <h6>Shoe shining</h6>
+        <p>R50,00</p>
+      </div>
+      <div class="card">
+        <img src="/Images/P1.png" alt="Deepwash">
+        <h5>Deepwash</h5>
+        <p>R80,00</p>
+      </div>
+      <div class="card">
+        <img src="/Images/P5.jpg" alt="Whitening">
+        <h4>Whitening</h4>
+        <p>R100,00</p>
+      </div>
+      <div class="card">
+        <img src="/Images/P3.png" alt="Sandal Cleaningr">
+        <h3>Sandal Cleaning</h3>
+        <p>R60,00</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="store-section">
+    <div class="store-container">
+      <h4 class="store-label">STORE</h4>
+      <h1 class="store-title">VISIT OUR STORE</h1>
+      <div class="store-content">
+        <div class="store-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.8374903518985!2d27.8971!3d-26.309672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e953cf8e51b98c5%3A0x38f61cf5ea9a4dc3!2sEldorado%20Park!5e0!3m2!1sen!2sza!4v1698743568451!5m2!1sen!2sza"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <div class="store-info">
+          <h2 class="store-location">Clean Kicks - Johannesburg</h2>
+          <p class="store-address">
+            <i class="fa fa-map-marker"></i>
+            413 Catfish street Lawley extension 1,Johannesburg <br>
+            Gauteng, South Africa
+          </p>
+          <p class="store-contact">
+            <i class="fa fa-phone"></i> +27 (65) 979-7754<br>
+            <i class="fa fa-envelope"></i> <a href="mailto:info@dripclean.co.za">info@cleankicks.co.za<br>
+              <i class="fa fa-globe"></i> <a href="https://cleankicks.co.za">www.cleankicks.co.za<br>
+
+          </p>
+
+          <p><strong>Monday to Friday:</strong><span class="time">9 AM - 6 PM</span></p>
+          <p><strong>Saturday:</strong><span class="time">9 AM - 2 PM</span></p>
+          <p><strong>Sunday:</strong><span class="time">9 AM - 2 PM</span></p>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+
+
+    <div class="footer-social">
+      <ul class="wrapper">
+        <li class="icon whatsapp">
+          <span class="tooly">WhatsApp</span>
+          <svg viewBox="0 0 448 512" height="1.2em" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M380.9 97.1C339.3 55.4 283.8 32 224.6 32 103.5 32 8 127.6 8 249.2c0 44 11.6 86.1 33.8 123l-35.2 102.2 105.8-33.1c34.9 18.4 74.1 28.2 114.2 28.2h.1c121.1 0 216.6-95.6 216.6-216.1 0-59.1-23.3-114.5-65.2-156.3zM224.6 407.5h-.1c-36.5 0-72.1-9.7-103.2-28.1l-7.4-4.4-62.8 19.6 18.7-60.4-4.8-7.7c-20.8-33.3-31.8-71.9-31.8-111.5C33 150 118.3 64.7 224.6 64.7c48.6 0 94.3 18.9 128.9 53.2 34.5 34.2 53.6 79.5 53.6 128.3 0 106.1-86.8 192.3-192.5 192.3zm104.3-138.7c-5.7-2.9-33.8-16.6-39.1-18.5-5.3-1.9-9.2-2.9-13.1 2.9-3.9 5.7-15 18.5-18.4 22.3-3.4 3.8-6.8 4.3-12.5 1.4-33.8-16.9-55.9-30.1-78.3-67.4-5.9-10.2 5.9-9.5 16.9-31.5 1.9-3.8.9-7.2-.5-10.1-1.4-2.9-13.1-31.5-18.4-43.7-4.9-11.7-9.9-10.1-13.1-10.3-3.4-.2-7.2-.2-11-.2-3.8 0-10.1 1.4-15.3 7.2-5.3 5.7-20.2 19.8-20.2 48.4s20.7 56.1 23.6 59.9c2.9 3.8 40.6 62 98.4 87.1 13.8 5.9 24.6 9.5 33 12.1 13.9 4.4 26.5 3.8 36.5 2.3 11.1-1.6 33.8-13.8 38.6-27.1 4.8-13.4 4.8-24.9 3.4-27.1-1.4-2.3-5.2-3.7-10.9-6.6z">
+            </path>
+          </svg>
+        </li>
+        <li class="icon twitter">
+          <span class="tooly">Twitter</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+            <path
+              d="M14.095479,10.316482L22.286354,1h-1.940718l-7.115352,8.087682L7.551414,1H1l8.589488,12.231093L1,23h1.940717  l7.509372-8.542861L16.448587,23H23L14.095479,10.316482z M11.436522,13.338465l-0.871624-1.218704l-6.924311-9.68815h2.981339  l5.58978,7.82155l0.867949,1.218704l7.26506,10.166271h-2.981339L11.436522,13.338465z" />
+          </svg>
+        </li>
+        <li class="icon instagram">
+          <span class="tooly">Instagram</span>
+          <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor" viewBox="0 0 16 16">
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+            </path>
+          </svg>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Logo Section -->
+    <div class="footer-logo">
+      <img src="Images/Logo-removebg-preview.png" alt="Clean Kicks Logo">
+    </div>
+
+    </div>
+
+
+    <!-- Footer Text -->
+    <div class="footer-bottom">
+      <p>© 2024 Clean Kicks Sneakers. All rights reserved. ❤️ Designed by <a href="https://spacebarsolutions.co.za/"
+          target="_blank" style="color: white; text-decoration: none;">Spacebar Solutions
+          <small class="copyright__content"><a href="refund-policy.html">Refund policy</a>
+          </small></a> <small class="copyright__content"><a href="privacy policy.html">Privacy policy</a></small>
+        <small class="copyright__content"><a href="terms of services.html">Terms of service</a></small>
+        <small class="copyright__content"><a href="shipping policy.html">Shipping policy</a></small>
+      </p>
+    </div>
+
+  </footer>
+  <!-- JavaScript to Toggle the Hidden Paragraph -->
+  <script>
+    // Get all the toggle buttons (LEARN MORE links)
+    const toggleButtons = document.querySelectorAll('.toggle-paragraph');
+
+    toggleButtons.forEach(button => {
+      button.addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent the link from navigating
+        const hiddenParagraph = this.previousElementSibling; // The paragraph to show/hide
+
+        // Toggle the display of the hidden paragraph
+        if (hiddenParagraph.style.display === "none" || hiddenParagraph.style.display === "") {
+          hiddenParagraph.style.display = "block";
+          this.textContent = "LEARN LESS ←"; // Change text to "LEARN LESS"
+        } else {
+          hiddenParagraph.style.display = "none";
+          this.textContent = "LEARN MORE →"; // Change text back to "LEARN MORE"
+        }
+      });
+    });
+  </script>
+
+  <script src="java script.js"></script>
+</body>
+
+</html>
